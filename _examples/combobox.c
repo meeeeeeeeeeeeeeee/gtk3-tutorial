@@ -5,7 +5,6 @@ int main(int argc, char *argv[]) {
     gtk_init(&argc, &argv);
 
     GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-
     GtkListStore *liststore = gtk_list_store_new(1, G_TYPE_STRING);
     GtkTreeIter iter;
     GtkWidget *combobox = gtk_combo_box_new_with_model(GTK_TREE_MODEL(liststore));
